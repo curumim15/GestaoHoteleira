@@ -1,0 +1,61 @@
+.img_size{
+  height: 135px;
+  width: 190px;
+  margin-left: 26%;
+  margin-top: 20%;
+}
+
+.BemVindo{
+  margin-left: 135px;
+  margin-top: 1px;
+  font-size: 30px;
+  font-family:'Bungee';
+  color: #393D46;
+}
+
+.login{
+  border: 2px solid;
+  width: 200px;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+
+.botao{
+  margin-top: 50px;
+  margin-left: 135px;
+  
+}
+
+
+
+
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+

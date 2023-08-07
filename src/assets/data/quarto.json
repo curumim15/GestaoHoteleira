@@ -1,0 +1,59 @@
+{
+  "quarto1": {
+    "Nome" : "Quarto 1",
+    "Numero": "1",
+    "Tipo": "Individual",
+    "EstadodeReserva": "Reservado a Carla Lopes",
+    "Especificacoes": "Quarto com vista para o mar"
+    
+  },
+  "quarto2": {
+    "Nome" : "Quarto 2",
+    "Numero" : "2",
+    "Tipo": "Duplo",
+    "EstadodeReserva": "Reservado a Joana Costa",
+    "Especificacoes": "Adapetado para pessoas com mobilidade reduzida"
+  },
+  "quarto3": {
+    "Nome" : "Quarto 3",
+    "Numero": "3",
+    "Tipo": "Triplo",
+    "EstadodeReserva": "Reservado a Antonio Varandas",
+    "Especificacoes": "Duplex"
+    
+  },
+  "quarto4": {
+    "Nome" : "Quarto 4",
+    "Numero": "4",
+    "Tipo": "Duplo",
+    "EstadodeReserva": "Reservado a Joao Sousa",
+    "Especificacoes": "Duplex"
+    
+  },
+  "quarto5": {
+    "Nome" : "Quarto 5",
+    "Numero": "5",
+    "Tipo": "Individual",
+    "EstadodeReserva": "Reservado a Hugo Castro",
+    "Especificacoes": "Quarto com vista para o mar"
+    
+  },
+  "quarto6": {
+    "Nome" : "Quarto 6",
+    "Numero": "6",
+    "Tipo": "Triplo",
+    "EstadodeReserva": "Reservado a Francisco Ferreira",
+    "Especificacoes": "Adapetado para pessoas com mobilidade reduzida"
+    
+  },
+  "quarto7": {
+    "Nome" : "Quarto 7",
+    "Numero": "7",
+    "Tipo": "Triplo",
+    "EstadodeReserva": "Reservado a Rodrigo Reis",
+    "Especificacoes": "Duplex"
+    
+  }
+}
+
+ 

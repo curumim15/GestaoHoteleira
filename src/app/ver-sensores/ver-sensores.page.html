@@ -1,0 +1,81 @@
+
+<!-- Header -->
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+       Sensores
+      </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu" class="icon"> </ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-header>
+
+  <ion-content>
+    <!-- Barra de pesquisar -->
+    <ion-toolbar>
+      <div class="pesquisa"></div>
+      <ion-searchbar color="light"></ion-searchbar>
+    </ion-toolbar>
+    
+    <!-- Cards de cada sensor  -->
+    <ion-card color="light">
+      <ion-grid>
+        <div class ="SensorSalaJantar">
+        <ion-row >
+          <ion-col size="10">
+            <div class ="textSensorSalaJantar">
+            Sensor Sala de Jantar
+          </div> 
+          </ion-col>
+        </ion-row>
+      </div>
+     </ion-grid>    
+
+    <div class="info1">
+     <p>Tipo de Sensor: Temperatura</p>
+     <p>Estado: Ligado</p>
+     <p>Temperatura atual: 18ºC<ion-icon name="thermometer-outline"></ion-icon></p>
+    </div>
+
+    </ion-card>
+
+
+    <ion-card color="light">
+      <ion-grid>
+        <div class ="SensorRececao">
+        <ion-row >
+          <ion-col size="10">
+            <div class ="textSensorRececao">
+            Sensor Receção
+          </div> 
+          </ion-col>
+        </ion-row>
+      </div>
+     </ion-grid>    
+     
+     <div class="info2">
+     <p>Tipo de Sensor: Movimento</p>
+     <p>Estado: Avariado<ion-icon name="build-outline"></ion-icon> </p>
+    </div>
+    
+    </ion-card>
+
+    <!-- Botao que abre o model do Criar Sensores -->
+    <section>
+      <div class="botao">
+      <ion-button  color="light" (click)="CriarSensor()" ><ion-icon name="add-circle-outline" slot="start"></ion-icon>Criar novo Sensor</ion-button>
+      </div>  
+    </section>
+
+
+    
+
+
+    
+
+
+  </ion-content>
+</ion-app>

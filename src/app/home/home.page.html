@@ -1,0 +1,49 @@
+<!-- Header -->
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title >My Hotel</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  
+<!-- Logo, Input para por o codgio do funcionario e botao da confirmção -->
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="submitForm()" novalidate>
+  
+  <ion-item>
+    <img class="img_size" src="./assets/imgs/logo.png">
+  </ion-item>
+
+  <div class="BemVindo">
+    <h1>Bem Vindo</h1>
+  </div>
+
+  <ion-row class="ion-align-items-center">
+  <div class="login">
+ 
+    <ion-item lines="full">
+      <ion-input placeholder="Código Funcionário" formControlName="codigo" required></ion-input>
+    </ion-item>
+  </div>
+</ion-row>
+  
+  <div class="ion-text-center">
+    <ion-text class="ion-padding" color="danger" *ngIf="formControls.codigo.errors?.required">
+      Codigo de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="formControls.codigo.errors?.pattern">
+      Codigo inválido
+    </ion-text>
+  </div>
+  
+
+  <section>
+    <div class="botao">
+    <ion-button routerLink="/lobby" [disabled]="!form.valid" color="light" onclick="IniciarSessao()" >Iniciar Sessão</ion-button>
+    </div>
+  </section>
+</form>
+</ion-content>
+</ion-app>

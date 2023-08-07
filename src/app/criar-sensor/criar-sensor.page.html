@@ -1,0 +1,33 @@
+<!-- Header -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Criar Novo Sensor</ion-title>
+    <ion-buttons slot="start">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!-- Input para por a informçao do novo Sensor Botoes para adicionar e cancelar-->
+<ion-content>
+  <ion-item>
+    <div class="tiposensor"> <ion-label>Tipo de Sensor</ion-label></div>
+       <div class="boxtiposensor">
+         <ion-input placeholder="Tipo Sensor" type="text"[(ngModel)]="Tipo"></ion-input>
+       </div>
+   </ion-item>
+
+
+   <ion-item>
+    <div class="localização"> <ion-label>Localização</ion-label></div>
+       <div class="boxlocalizacao">
+         <ion-input placeholder="Localização" type="text" [(ngModel)]="local"></ion-input>
+       </div>
+   </ion-item>
+   <section>
+   <div class="botao">
+   <ion-button  color="light" (click)="fechaCriarSensor()" ><ion-icon name="close-circle-outline" slot="start"></ion-icon>Cancelar</ion-button>
+   <ion-button  color="light"  (click)="presentAlertConfirm()"><ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>Adicionar</ion-button>
+   </div>  
+ </section> 
+ 
+  
+  </ion-content>

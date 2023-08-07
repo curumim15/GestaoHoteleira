@@ -1,0 +1,36 @@
+
+<!-- Header -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Info. Quarto</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!-- Informçao de cada Quarto -->
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label>Quarto {{ quarto.Numero }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ quarto.Tipo }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ quarto.EstadodeReserva }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ quarto.Especificacoes }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-label>
+
+    <ion-icon name="calendar-number-outline"></ion-icon>  Data de Entrada</ion-label>
+  <ion-datetime value="2021-05-10" placeholder="Select Date"></ion-datetime>
+
+  <ion-label>
+    <ion-icon name="calendar-number-outline"></ion-icon> Data de Saída</ion-label>
+  <ion-datetime value="2021-05-15" placeholder="Select Date"></ion-datetime>
+  
+</ion-content>

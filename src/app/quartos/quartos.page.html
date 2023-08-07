@@ -1,0 +1,58 @@
+<!-- Header  -->
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+       Quartos
+      </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu" class="icon"> </ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-header>
+
+<!-- Codigo da lista  dos quartos em geral e o quartos em individual -->
+  <ion-content [fullscreen]="true">
+    <ion-toolbar>
+      <div class="pesquisa"></div>
+      <ion-searchbar color="light"></ion-searchbar>
+    </ion-toolbar>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <div class="quartos">
+            <h2>Total: 200</h2>
+            <h2>Disponíveis: 118</h2>
+            <h2>Indisponíveis: 2</h2>
+            <h2>Ocupados: 80</h2>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-item-sliding *ngFor="let quarto of  quartos | keyvalue">
+      <ion-item>
+        <ion-label>
+          {{ quarto.value.Nome}}
+        </ion-label>  
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="primary" (click)="verQuarto('quarto',quarto.key)">
+          <ion-icon slot="start" name="add-circle"></ion-icon>
+          Info.
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    
+  
+
+
+  </ion-content>
+</ion-app>
+
+
+
+

@@ -1,0 +1,142 @@
+
+<!-- Header -->
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Reservas</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu" class="icon"> </ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <!-- Codigo do formulario -->
+  <ion-content>
+    
+      <ion-item>
+       <div class="nome"> <ion-label>Nome</ion-label></div>
+          <div class="boxnome">
+            <ion-input placeholder="nome" type="text" [(ngModel)]="nome"></ion-input>
+          </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="telefone"> <ion-label>Telemóvel/Telefone</ion-label></div>
+           <div class="boxtelefone">
+             <ion-input placeholder="telemóvel" type="text"[(ngModel)]="tele"></ion-input>
+           </div>
+       </ion-item>
+
+       <ion-item>
+        <div class="email"> <ion-label>Email</ion-label></div>
+           <div class="boxemail">
+             <ion-input placeholder="email" type="text" [(ngModel)]="email"></ion-input>
+           </div>
+       </ion-item>
+
+       <ion-item>
+        <ion-label>Adultos</ion-label>
+        <div class="selectAdultos">
+        <select [(ngModel)]="adultos">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        </div>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>Crianças</ion-label>
+        <div class="selectCriancas">
+        <select [(ngModel)]="criancas">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        </div>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>Quarto</ion-label>
+        <ion-select interface="popover" [(ngModel)]="tipo">
+          <ion-select-option value="individual">Individual</ion-select-option>
+          <ion-select-option value="duplo"> Duplo</ion-select-option>
+          <ion-select-option value="triplo">Triplo</ion-select-option>
+          <ion-select-option value="quadruplo">Quádruplo</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+
+
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="calendar-clear-outline"></ion-icon> Data de Entrada</ion-label>
+          <ion-datetime value="2021-05-10" placeholder="Select Date"[(ngModel)]="entrada"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="calendar-clear-outline"></ion-icon> Data de Saída</ion-label>
+          <ion-datetime value="2021-05-15" placeholder="Select Date"[(ngModel)]="saida"></ion-datetime>
+        </ion-item>
+       </ion-list>
+
+       <ion-item>
+        <ion-label>Tipo Pagamento</ion-label>
+        <ion-select interface="popover" [(ngModel)]="paga">
+          <ion-select-option value="multibanco">Multibanco</ion-select-option>
+          <ion-select-option value="mbway"> Mbway</ion-select-option>
+          <ion-select-option value="dinheiro">Dinheiro</ion-select-option>
+          
+        </ion-select>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>Serviço de Quarto</ion-label>
+        <ion-toggle slot="end" name="grape" color="tertiary" checked [(ngModel)]="quarto"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Serviço de Limpeza</ion-label>
+        <ion-toggle slot="end" name="grape" color="tertiary" checked [(ngModel)]="limp"></ion-toggle>
+      </ion-item>
+
+      <div class="botoes">
+        <section>
+          <ion-button routerLink="/lobby" color="light">Cancelar</ion-button>
+          <ion-button color="light" (click)="presentAlertConfirm()">Criar Reserva </ion-button>
+        </section>
+      </div>
+
+
+    
+  
+  
+  
+  </ion-content>
+
+
+
+
+
+</ion-app>
